@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+<div>
+    <h1>Cadastro</h1><br>
+</div>
+<table border="3">
+<form action="dadosPessoais.jsp">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>Nome: <input type="text" name="Nome"></p>
+        <p>Endereço: <input type="text" name="Endereço"></p>
+        <p>Cidade: <input type="text" name="Cidade"></p>
+        <p>Estado: <label for="Estado"></label>
+        <select name="Estado" id="Estado" style="width: 170px;">
+            <option value="Goiás">Goiás</option>
+            <option value="Mato Grosso">Mato Grosso</option>
+            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+            <option value="Distrito Federal">Distrito Federal</option>
+        </select></p>
+    </fieldset>
+</form><br><br>
+<form action="dadosProfissionais.jsp">
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+        <p>Natureza do Cargo</p>
+        <input type="radio" name="cargos"> Gerência 
+        <input type="radio" name="cargos"> Financeiro
+        <input type="radio" name="cargos"> Recepção
+        <input type="radio" name="cargos"> Administrativo
+        <input type="radio" name="cargos"> Jurídico<br><br><br>
+        <legend>Área de Interesse</legend><br>
+        <input type="checkbox" name="areas" id="Computação"> Computação
+        <input type="checkbox" name="areas" id="Biologia"> Biologia
+        <input type="checkbox" name="areas" id="Meio Ambiente"> Meio Ambiente
+        <input type="checkbox" name="areas" id="Engenharia"> Engenharia
+        <input type="checkbox" name="areas" id="História"> História<br><br><br>
+        <label for="Mini-currículo"></label>Mini-currículo<br>
+        <textarea name="Mini-currículo" id="Mini-currículo" rows="4" cols="50">
+        </textarea><br>
+    </fieldset><br>
+        <p><input type="submit" value="Enviar">
+        <input type="submit" value="Limpar"></p>
+</form>
+</table>
+</body>
+</html>
